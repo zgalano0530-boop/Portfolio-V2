@@ -817,6 +817,10 @@ footer {
         height: 150px;
     }
 
+    .Profile {
+        width: 50%;
+    }
+
     .hero {
         padding: 5rem 0 3rem;
     }
@@ -830,17 +834,17 @@ footer {
         gap: 1rem;
     }
 
-    /* Reduce animations on mobile for performance */
-    .floating-element, .floating-shape, .floating-dot, .floating-line {
-        animation-duration: 40s;
-        filter: blur(15px);
-    }
+    /* REMOVED: Mobile animation optimizations that were slowing down animations */
 }
 
 @media (max-width: 480px) {
     .profile-picture {
         width: 120px;
         height: 120px;
+    }
+
+    .Profile {
+        width: 60%;
     }
 
     .hero {
@@ -852,9 +856,10 @@ footer {
         font-size: 0.9rem;
     }
     
+    /* REMOVED: Mobile animation restrictions that were hiding elements */
 }
 
-/* Performance optimizations */
+/* Performance optimizations - ONLY for users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -876,6 +881,4 @@ footer {
     .hero h1 .highlight::after {
         display: none;
     }
-
 }
-
