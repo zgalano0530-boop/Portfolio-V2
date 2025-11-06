@@ -786,7 +786,7 @@ footer {
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .nav-links {
         position: fixed;
         top: 70px;
@@ -882,3 +882,4 @@ footer {
         display: none;
     }
 }
+
