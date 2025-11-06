@@ -786,7 +786,7 @@ footer {
 }
 
 /* Mobile Responsive */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .nav-links {
         position: fixed;
         top: 70px;
@@ -852,9 +852,6 @@ footer {
         font-size: 0.9rem;
     }
     
-    .floating-element, .floating-shape, .floating-dot, .floating-line {
-        display: none; /* Remove on very small screens */
-    }
 }
 
 /* Performance optimizations */
@@ -881,3 +878,4 @@ footer {
     }
 
 }
+
